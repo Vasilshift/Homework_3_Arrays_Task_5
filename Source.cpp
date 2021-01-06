@@ -12,12 +12,14 @@ int main() {
 	const int n = 5;
 	int arr1[n] = { 1, 2, 3, 4, 5 };
 	int arr2[n] = { 5, 6, 7, 8, 9 };
+	int arr3[n];
 
-	int size = sizeof(arr1) / sizeof(arr1[0]);
 	
-	for (int i = 0; i < size; i++) {
+	for (int i = 0; i < 5; i++) {
 
-		cout << arr1[i] + arr2[i] << " ";
+		arr3[i] = arr1[i] + arr2[i];
+
+		cout << arr3[i] << " ";
 
 	}
 
